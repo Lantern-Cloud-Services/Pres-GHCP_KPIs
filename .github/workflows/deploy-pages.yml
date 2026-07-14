@@ -27,6 +27,9 @@ jobs:
 
       - name: Prepare site
         run: |
+          set -euo pipefail
+          test -f Copilot_KPIs_v2.html
+          test -d assets
           mkdir -p _site
           cp Copilot_KPIs_v2.html _site/index.html
           cp -r assets _site/assets
