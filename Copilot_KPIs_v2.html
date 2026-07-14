@@ -623,6 +623,24 @@
     color: var(--text-2);
   }
 
+  /* ------- References (page 12) ------- */
+  .ref-list { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+  .ref-item {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    padding: 18px 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--bg-1);
+    text-decoration: none;
+    transition: transform .2s, border-color .2s, box-shadow .2s;
+  }
+  .ref-item:hover { transform: translateX(4px); border-color: var(--cyan); box-shadow: var(--shadow); }
+  .ref-item .ref-text { display: flex; flex-direction: column; gap: 4px; }
+  .ref-item .ref-title { color: var(--text-0); font-weight: 600; font-size: 1.05rem; }
+  .ref-item .ref-source { color: var(--text-3); font-size: .82rem; }
+  .ref-item .ref-arrow { color: var(--text-2); flex-shrink: 0; width: 20px; height: 20px; transition: transform .2s, color .2s; }
+  .ref-item:hover .ref-arrow { color: var(--cyan); transform: translate(2px, -2px); }
+
   /* ------- Image slide frames ------- */
   .img-frame {
     border: 1px solid var(--border);
@@ -672,12 +690,12 @@
 
   <!-- ==================== SLIDE 1 — Title / Hero ==================== -->
   <section class="slide hero active" data-slide="0">
-    <span class="page-num">01 / 11</span>
+    <span class="page-num">01 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>A Field Guide</span>
     <h1 class="anim-child">Stop measuring lines.<br /><span class="accent">Start measuring outcomes.</span></h1>
     <p class="sub anim-child">A practical guide to the KPIs that actually reveal whether GitHub Copilot — and your engineering system — is making developers more effective.</p>
     <div class="meta anim-child">
-      <span><strong>11 pages</strong></span>
+      <span><strong>12 pages</strong></span>
       <span>·</span>
       <span>GitHub &amp; EngThrive metrics</span>
       <span>·</span>
@@ -691,7 +709,7 @@
 
   <!-- ==================== SLIDE 2 — Eliminate unhelpful KPIs ==================== -->
   <section class="slide" data-slide="1">
-    <span class="page-num">02 / 11</span>
+    <span class="page-num">02 / 12</span>
     <span class="page-tag anim-child"><span class="dot" style="background: var(--red); box-shadow: 0 0 8px var(--red);"></span>What to avoid</span>
     <h1 class="sans anim-child">Eliminate unhelpful KPIs.</h1>
     <p class="deck anim-child" style="color: var(--cyan-soft);">Measure outcomes — not outputs.</p>
@@ -710,7 +728,7 @@
 
   <!-- ==================== SLIDE 3 — Metrics & KPIs (4 categories) ==================== -->
   <section class="slide" data-slide="2">
-    <span class="page-num">03 / 11</span>
+    <span class="page-num">03 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>The four lenses</span>
     <h1 class="sans anim-child" style="text-align: center; margin-bottom: 36px;">Metrics &amp; KPIs</h1>
 
@@ -777,7 +795,7 @@
 
   <!-- ==================== SLIDE 4 — What metrics does GitHub track? ==================== -->
   <section class="slide" data-slide="3">
-    <span class="page-num">04 / 11</span>
+    <span class="page-num">04 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>GitHub's framework</span>
     <h1 class="sans anim-child">What metrics does GitHub track?</h1>
     <div class="accent-line anim-child"></div>
@@ -849,7 +867,7 @@
 
   <!-- ==================== SLIDE 5 — EngThrive metrics ==================== -->
   <section class="slide" data-slide="4">
-    <span class="page-num">05 / 11</span>
+    <span class="page-num">05 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>Microsoft's DevEx initiative</span>
     <h1 class="sans anim-child">What metrics does our DevEx initiative <span style="color: var(--cyan-soft);">(EngThrive)</span> track?</h1>
     <div class="accent-line anim-child"></div>
@@ -885,7 +903,7 @@
 
   <!-- ==================== SLIDE 6 — Why these metrics? ==================== -->
   <section class="slide" data-slide="5">
-    <span class="page-num">06 / 11</span>
+    <span class="page-num">06 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>The evidence behind them</span>
     <h1 class="sans anim-child">Why did we choose these metrics?</h1>
     <div class="accent-line anim-child"></div>
@@ -925,7 +943,7 @@
 
   <!-- ==================== SLIDE 7 — SPACE framework intro ==================== -->
   <section class="slide" data-slide="6">
-    <span class="page-num">07 / 11</span>
+    <span class="page-num">07 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>SPACE framework</span>
     <div class="space-grid anim-child">
       <div class="left">
@@ -944,7 +962,7 @@
 
   <!-- ==================== SLIDE 8 — SPACE in action (table) ==================== -->
   <section class="slide" data-slide="7">
-    <span class="page-num">08 / 11</span>
+    <span class="page-num">08 / 12</span>
     <span class="page-tag anim-child"><span class="dot"></span>Putting it together</span>
     <h1 class="sans anim-child">SPACE framework in action</h1>
     <div class="accent-line anim-child"></div>
@@ -1074,7 +1092,7 @@
 
   <!-- ==================== SLIDE 9 — Dashboard Overview ==================== -->
   <section class="slide" data-slide="8">
-    <span class="page-num">09 / 11</span>
+    <span class="page-num">09 / 12</span>
     <span class="page-tag anim-child"><span class="dot" style="background: var(--teal); box-shadow: 0 0 8px var(--teal);"></span>Dashboard example — Overview</span>
     <h1 class="sans anim-child">Metrics dashboard: <span style="color: var(--teal);">at a glance</span></h1>
     <p class="deck anim-child">A single-pane view mapping DORA-aligned categories — deployment frequency, lead time, change-failure rate, and review quality — to concrete KPIs with health indicators.</p>
@@ -1085,7 +1103,7 @@
 
   <!-- ==================== SLIDE 10 — PR Summary ==================== -->
   <section class="slide" data-slide="9">
-    <span class="page-num">10 / 11</span>
+    <span class="page-num">10 / 12</span>
     <span class="page-tag anim-child"><span class="dot" style="background: var(--green); box-shadow: 0 0 8px var(--green);"></span>Dashboard example — Pull Requests</span>
     <h1 class="sans anim-child">Pull request <span style="color: var(--green-soft);">KPI summary</span></h1>
     <p class="deck anim-child">Drill into PR health: status distribution, review-dwell time, completion time, and percentile benchmarks — the signals that connect developer activity to delivery outcomes.</p>
@@ -1096,7 +1114,7 @@
 
   <!-- ==================== SLIDE 11 — Leader Board ==================== -->
   <section class="slide" data-slide="10">
-    <span class="page-num">11 / 11</span>
+    <span class="page-num">11 / 12</span>
     <span class="page-tag anim-child"><span class="dot" style="background: var(--gold); box-shadow: 0 0 8px var(--gold);"></span>Dashboard example — Leader Board</span>
     <h1 class="sans anim-child">Copilot <span style="color: var(--gold);">leader board</span></h1>
     <p class="deck anim-child">Top 25 users ranked by LOC acceptance rate, code acceptance rate, and interaction volume — useful for identifying champions and coaching opportunities, <em>not</em> individual performance reviews.</p>
@@ -1108,6 +1126,52 @@
     </p>
   </section>
 
+  <!-- ==================== SLIDE 12 — References ==================== -->
+  <section class="slide" data-slide="11">
+    <span class="page-num">12 / 12</span>
+    <span class="page-tag anim-child"><span class="dot"></span>Further reading</span>
+    <h1 class="sans anim-child">References</h1>
+    <div class="accent-line anim-child"></div>
+
+    <div class="ref-list anim-child">
+      <a class="ref-item" href="https://assets.ctfassets.net/wfutmusr1t3h/59IWCIRvx0KfHbh6B7bv62/d9f55b94ab43fe91e9ed183d73882954/2025-05-28-GitHub-ESSP-Ebook-EZ-Version012.pdf" target="_blank" rel="noopener noreferrer">
+        <div class="ref-text">
+          <span class="ref-title">GitHub's Engineering Success Playbook</span>
+          <span class="ref-source">GitHub · PDF ebook</span>
+        </div>
+        <svg class="ref-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="ref-item" href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank" rel="noopener noreferrer">
+        <div class="ref-text">
+          <span class="ref-title">Space Metrics</span>
+          <span class="ref-source">ACM Queue</span>
+        </div>
+        <svg class="ref-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="ref-item" href="https://queue.acm.org/detail.cfm?id=3595878" target="_blank" rel="noopener noreferrer">
+        <div class="ref-text">
+          <span class="ref-title">DevEx</span>
+          <span class="ref-source">ACM Queue</span>
+        </div>
+        <svg class="ref-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="ref-item" href="https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/" target="_blank" rel="noopener noreferrer">
+        <div class="ref-text">
+          <span class="ref-title">DX Core 4</span>
+          <span class="ref-source">getdx.com · Research</span>
+        </div>
+        <svg class="ref-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+      <a class="ref-item" href="https://dora.dev/" target="_blank" rel="noopener noreferrer">
+        <div class="ref-text">
+          <span class="ref-title">DORA</span>
+          <span class="ref-source">dora.dev</span>
+        </div>
+        <svg class="ref-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </section>
+
 </div>
 
 <!-- Arrow navigation -->
@@ -1115,7 +1179,7 @@
   <button class="arrow-btn" id="prevBtn" disabled aria-label="Previous slide">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
-  <span class="page-indicator" id="pageIndicator">1 / 11</span>
+  <span class="page-indicator" id="pageIndicator">1 / 12</span>
   <button class="arrow-btn" id="nextBtn" aria-label="Next slide">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
   </button>
@@ -1137,7 +1201,7 @@
   const keyHint = document.getElementById('keyHint');
 
   // Build side rail
-  const titles = ['Title','Avoid','Categories','GitHub tracks','EngThrive','Why these?','SPACE','In action','Dashboard','PR Summary','Leader Board'];
+  const titles = ['Title','Avoid','Categories','GitHub tracks','EngThrive','Why these?','SPACE','In action','Dashboard','PR Summary','Leader Board','References'];
   const rail = document.getElementById('rail');
   titles.forEach((label, i) => {
     const a = document.createElement('a');
